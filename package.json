@@ -1,0 +1,27 @@
+{
+  "name": "inocan-eslint",
+  "version": "1.0.0",
+  "description": "A VueJS inspired eslint configuration for front and backends using Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inocan-group/eslint-config-inocan.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "peerDependencies": {
+    "eslint": ">= 5",
+    "eslint-plugin-vue": "^5.1.0",
+    "typescript-eslint-parser": "^21.0.2"
+  },
+  "author": "Ken Snyder <ken@ken.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inocan-group/eslint-config-inocan/issues"
+  },
+  "homepage": "https://github.com/inocan-group/eslint-config-inocan#readme"
+}
