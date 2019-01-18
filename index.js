@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: ["plugin:vue/essential", "@vue/prettier", "@vue/typescript"],
   rules: {
-    "no-console": "error",
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "warn",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
   },
   parserOptions: {

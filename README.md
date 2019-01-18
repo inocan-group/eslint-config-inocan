@@ -18,9 +18,9 @@ You should install the following peer dependencies in your project along side th
 
 ## Logging
 
-You may note the strong rules around using `console.xxx` (aka, we don't allow it) but
-that's because we're a firm believer that all logging should use a _logging framework_ and
-on Inocan Projects we use:
+You may note the strong rules around using `console.xxx` (aka, warn in non-prod, error in
+prod) but that's because we're a firm believer that all logging should use a _logging
+framework_ and on Inocan Projects we use:
 
 - [aws-log](https://github.com/inocan-group/aws-log) - for backend Typescript (in
   particular Lambda functions)
@@ -31,6 +31,8 @@ If you need to make an exception then you'll need to put in the eslint directive
 ```javascript
 /* eslint no-console: "off" */
 ```
+
+or just deal with the warning message if you're in development.
 
 ## License
 
