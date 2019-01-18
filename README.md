@@ -11,7 +11,26 @@ You should install the following peer dependencies in your project along side th
 
 - eslint
 - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
-- [typescript-eslint-parser](https://github.com/eslint/typescript-eslint-parser)
+- [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint)
+
+> **Note:** if you're using the Vue CLI and have chosen Typescript then these will be
+> already included. If not then you'll want to add them manually.
+
+## Logging
+
+You may note the strong rules around using `console.xxx` (aka, we don't allow it) but
+that's because we're a firm believer that all logging should use a _logging framework_ and
+on Inocan Projects we use:
+
+- [aws-log](https://github.com/inocan-group/aws-log) - for backend Typescript (in
+  particular Lambda functions)
+- [browser-log](https://github.com/inocan-group/browser-log) - for logging in the browser
+
+If you need to make an exception then you'll need to put in the eslint directive:
+
+```javascript
+/* eslint no-console: "off" */
+```
 
 ## License
 
