@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/inocan-group/eslint-config-inocan.git"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "keywords": [
     "eslint"
   ],

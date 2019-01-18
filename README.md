@@ -11,7 +11,7 @@ You should install the following peer dependencies in your project along side th
 
 - eslint
 - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
-- [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint)
+- [typescript-eslint-parser](https://github.com/typescript-eslint/typescript-eslint)
 
 > **Note:** if you're using the Vue CLI and have chosen Typescript then these will be
 > already included. If not then you'll want to add them manually.
